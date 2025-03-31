@@ -74,7 +74,7 @@ img {
     font-size: 18px;
     color: #FFFFFF;
     display: block;
-    font-weight: 800;
+    font-weight: 600;
     padding: 20px;
 }
 
@@ -200,9 +200,9 @@ hr {
 
 .testimonial-1 {
     flex-basis: calc(50% - 25px);
-    background-color: #24272e;
+    
     padding: 25px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    
 }
 
 .testimonial-1 p{
@@ -295,7 +295,7 @@ a img:hover {
 
 /* ------ RESPONSIVE ------ */
 
-@media (max-width: 100px) {
+@media (max-width: 0px) {
     .menu label {
         display: initial;
     }
@@ -342,8 +342,8 @@ a img:hover {
     }
 
     .testimonial-1 {
-        width: 45%;
-        margin-bottom: 25px;
+        width: 90%;
+        margin-bottom: 50px;
     }
 
     .information {
@@ -362,7 +362,7 @@ a img:hover {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 0px) {
     .header {
         padding: 100px 0;
     }
@@ -387,6 +387,6 @@ a img:hover {
     }
 
     .testimonial-1 {
-        width: 50%;
+        width: 100%;
     }
 }
