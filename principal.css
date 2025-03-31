@@ -196,6 +196,7 @@ hr {
     justify-content: space-between;
     gap: 20px;
     flex-wrap: wrap;
+    margin-left: 370px;
 }
 
 .testimonial-1 {
