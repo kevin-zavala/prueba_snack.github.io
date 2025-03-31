@@ -295,62 +295,34 @@ a img:hover {
 
 /* ------ RESPONSIVE ------ */
 
-@media (max-width: 600px) {
-    .menu label {
-        display: initial;
-    }
-
-    .menu .navbar {
-        position: absolute;
-        top: 70%;
-        left: 0;
-        right: 0;
-        background-color: #24272e;
-        display: none;
-        flex-direction: column;
-    }
-
-    .menu .navbar ul li {
-        width: 70%;
-    }
-
-    #menu:checked ~ .navbar {
-        display: flex;
-    }
-
+@media (max-width: 768px) {
     .header-txt h1 {
-        font-size: 50px;
-        line-height: 60px;
+        font-size: 1.8em;
     }
 
     .header-txt p {
-        padding: 0 50px;
+        font-size: 1em;
     }
 
     .about-content {
         flex-direction: column;
+        text-align: center;
     }
 
-    .about-txt, .about-img {
-        flex-basis: 70%;
-        padding: 0;
+    .about-txt,
+    .about-img {
+        width: 100%;
     }
 
     .testimonial-content {
         flex-direction: column;
         align-items: center;
-        width: 10px;
-        height: 10px;
     }
 
-    .testimonial-1 {
-        width: 60%;
-        margin-bottom: 30px;
-    }
-
-    .information {
-        flex-direction: column;
-        align-items: center;
+    .testimonial-1,
+    .testimonial-1-2 {
+        width: 100%;
+        margin-bottom: 20px;
     }
 
     .footer-content {
@@ -358,38 +330,40 @@ a img:hover {
         align-items: center;
     }
 
-    .testimonial {
-        text-align: center;
+    .footer .link {
+        width: 100%;
         margin-bottom: 20px;
     }
-    
+
+    iframe {
+        height: 200px;
+    }
 }
 
+/* Pantallas muy pequeñas (por ejemplo, teléfonos) */
 @media (max-width: 480px) {
-    .header {
-        padding: 100px 0;
-    }
-
     .header-txt h1 {
-        font-size: 35px;
-        line-height: 45px;
+        font-size: 1.5em;
     }
 
-    .header-txt p {
-        padding: 0 20px;
+    .buttons a {
+        padding: 8px 15px;
+        font-size: 1em;
     }
 
-    .btn-1 {
-        width: 100%;
-        margin: 10px 0;
-        padding: 15px;
+    .footer-content {
+        padding: 20px;
     }
 
-    .about-txt h2, .testimonial h2 {
-        font-size: 25px;
+    .footer .link h3 {
+        font-size: 1em;
     }
 
-    .testimonial-1 {
-        width: 100%;
+    .footer .link ul li {
+        font-size: 0.9em;
+    }
+
+    iframe {
+        height: 150px;
     }
 }
