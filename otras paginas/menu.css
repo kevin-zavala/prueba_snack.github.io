@@ -1,0 +1,162 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos para el contenedor de las categorías */
+.menu-categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+    justify-content: center; /* Centra los botones horizontalmente */
+    background-color: #f9f9f9; /* Un fondo ligero para las categorías */
+    border-bottom: 1px solid #eee;
+}
+
+.category-button {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+.category-button:hover {
+    background-color: #eee;
+}
+
+.category-button.active {
+    background-color: #ddd;
+    font-weight: bold;
+    border-color: #bbb;
+}
+
+/* Estilos para las secciones del menú (inicialmente ocultas) */
+.menu-section {
+    display: none;
+    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Diseño de cuadrícula responsivo */
+    gap: 20px;
+}
+
+/* Estilos para mostrar la sección activa */
+.menu-section.active {
+    display: grid;
+}
+
+.item {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Asegura que la imagen no se salga del contenedor */
+    display: flex;
+    flex-direction: column; /* Alinea los elementos verticalmente en pantallas pequeñas */
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    display: block; /* Evita espacio extra debajo de la imagen */
+    border-bottom: 1px solid #eee;
+}
+
+.item .details {
+    padding: 15px;
+}
+
+.item h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 1.5em;
+}
+
+.item .price {
+    color: #e44d26; /* Un color llamativo para el precio */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.item .description {
+    color: #666;
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: sticky; /* Se mantiene en la parte inferior */
+    bottom: 0;
+    width: 100%;
+}
+/* Contenedor de la barra de navegación */
+.navbar-container {
+    text-decoration-color: white;
+    display: flex;
+    justify-content: flex-end; /* Alinea la navbar a la derecha */
+    padding: 10px;
+}
+
+/* Barra de navegación */
+.navbar {
+    display: flex; /* Alinea los enlaces horizontalmente */
+    gap: 20px; /* Espacio entre los enlaces */
+}
+
+/* Enlaces dentro de la navbar */
+.navbar a {
+    color: #f0f0f0; /* Color de la letra de los enlaces */
+    text-decoration: none; /* Elimina el subrayado */
+    font-size: 18px; /* Tamaño de la fuente */
+    padding: 10px 20px; /* Espaciado alrededor del texto */
+    display: block;
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Cambiar el color del fondo y el texto cuando pasas el puntero por encima */
+.navbar a:hover {
+    background-color: #575757; /* Fondo al pasar el puntero */
+    color: #ffffff; /* Color del texto al pasar el puntero */
+}
+
+
+/* Estilos para pantallas más grandes (opcional, pero bueno para refinar el diseño) */
+@media (min-width: 768px) {
+    .item {
+        flex-direction: row; /* Alinea los elementos horizontalmente en pantallas medianas y grandes */
+    }
+
+    .item img {
+        width: 30%; /* O el ancho que desees para la imagen en pantallas más grandes */
+        border-right: 1px solid #eee;
+        border-bottom: none;
+    }
+
+    .item .details {
+        flex-grow: 1; /* El contenido de los detalles ocupa el espacio restante */
+        padding-left: 20px;
+    }
+
+    /* Asegurar que las secciones del menú ocupen todo el ancho disponible */
+    .menu-section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    
+}

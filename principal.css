@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #161d25;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 200px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+.back-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+    height: 200%;
+    object-fit: cover;
+}
+
+.menu {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    padding: 0 20px;
+}
+
+.logo {
+    color: #E0003E;
+    font-size: 25px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    color: #FFFFFF;
+    display: block;
+    font-weight: 600;
+    padding: 20px;
+}
+
+.menu .navbar ul li a:hover {
+    color: #E0003E;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-txt {
+    width: 100%;
+    text-align: center;
+}
+
+.header-txt h1 {
+    color: #FFFFFF;
+    font-size: 70px;
+    line-height: 80px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.header-txt span {
+    color: #E0003E;
+}
+
+.header-txt P {
+    font-size: 16px;
+    color: white;
+    padding: 0 200px;
+    margin-bottom: 25px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-1 {
+    display: inline-block;
+    background-color: #E0003E;
+    padding: 13px 25px;
+    width: 150px;
+    margin: 10px;
+    border-radius: 25px;
+    color: #FFFFFF;
+}
+
+.btn-1:hover {
+    background-color: #C30239;
+}
+
+.about {
+    padding: 50px 0;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-txt {
+    flex-basis: 50%;
+    padding-right: 35px;
+    color: white;
+}
+
+span {
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #C30239;
+}
+
+h2 {
+    font-size: 35px;
+    color: #FFFFFF;
+    margin: 15px 0;
+    line-height: 1;
+}
+
+hr {
+    border: 1px solid #C30239;
+    width: 10%;
+    margin-bottom: 30px;
+}
+
+.about-img {
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.about-img img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 25px;
+}
+
+.testimonial {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.testimonial-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.testimonial-1 {
+    flex-basis: calc(50% - 25px);
+    background-color: #24272e;
+    padding: 25px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+
+}
+.testimonial-1 p{
+    color: white;
+}
+
+.testimonial-1 h4 {
+    color: #FFFFFF;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.testimonial-1 p {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.face {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 4px solid #C30239;
+    margin-bottom: 15px;
+}
+
+.information {
+    padding: 50px 0 100px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.information-img {
+    text-align: center;
+}
+
+.f1, .f2 {
+    width: 100%;
+    max-width: 550px;
+}
+
+.footer {
+    padding: 50px 0;
+    background-color: #191A1F;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.link {
+    margin: 10px;
+}
+
+.link h3 {
+    font-size: 17px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.link a {
+    font-size: 17px;
+    color: #d4d4d4;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.link a:hover {
+    color: #C30239;
+}
+.logo img {
+    margin-left: 500px;
+    width: 130px;  /* Ajusta el valor a tu gusto */
+    height: auto; /* Mantiene la proporción original de la imagen */
+
+}
+a img {
+    transition: transform 0.3s;
+    margin-top: 70px; /* Ajusta la altura */
+}
+a img:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+
+    
+
+    
+
+/* ------ RESPONSIVE ------ */
+
+@media (max-width: 991px) {
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #24272e;
+        display: none;
+        flex-direction: column;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: flex;
+    }
+
+    .header-txt h1 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    .header-txt p {
+        padding: 0 50px;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-txt, .about-img {
+        flex-basis: 100%;
+        padding: 0;
+    }
+
+    .testimonial-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial-1 {
+        width: 90%;
+        margin-bottom: 50px;
+    }
+
+    .information {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .tstimonial {
+        text-align: center;
+        margin-bottom: 20px; 
+     }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 100px 0;
+    }
+
+    .header-txt h1 {
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+    .header-txt p {
+        padding: 0 20px;
+    }
+
+    .btn-1 {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .about-txt h2, .testimonial h2 {
+        font-size: 25px;
+    }
+
+    .testimonial-1 {
+        width: 100%;
+    }
+    
+    
+}

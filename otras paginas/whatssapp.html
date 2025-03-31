@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto por WhatsApp</title>
+    <style>
+        /* Estilos generales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Estilos para el Navbar */
+        .navbar {
+            background-color: #333;
+            padding: 15px 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .navbar ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        .navbar ul li {
+            margin: 0 20px;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar ul li a:hover {
+            background-color: #ff7e5f;
+        }
+
+        /* Estilos del body */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background: url('mazatlan.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-top: 70px; /* Ajusta el contenido para que no quede debajo del navbar */
+        }
+
+        /* Capa oscura para mejorar la legibilidad */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        h2 {
+            color: #fff;
+            font-size: 2em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            position: relative;
+            z-index: 1;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+            width: 90%;
+            max-width: 400px;
+            position: relative;
+            z-index: 1;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        /* Estilo del botón de WhatsApp */
+        .whatsapp-button {
+            background-color: #25D366;
+            color: white;
+            padding: 15px 20px;
+            font-size: 18px;
+            border-radius: 30px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+            font-weight: bold;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .whatsapp-button:hover {
+            background-color: #1ebe5d;
+            transform: scale(1.1);
+        }
+
+        /* Botón flotante de WhatsApp */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: white;
+            padding: 15px;
+            border-radius: 50%;
+            text-decoration: none;
+            font-size: 24px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+            transition: transform 0.2s ease-in-out;
+            z-index: 2;
+        }
+
+        .whatsapp-float:hover {
+            background-color: #1ebe5d;
+            transform: scale(1.2);
+        }
+
+        /* Media Query para pantallas pequeñas */
+        @media (max-width: 600px) {
+            h2 {
+                font-size: 1.5em;
+            }
+            .container {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="correo.html">CONTACTO</a></li>
+            <li><a href="menu.html">MENU</a></li>
+            
+        </ul>
+    </nav>
+
+    <div class="overlay"></div> <!-- Capa oscura sobre la imagen -->
+
+    <h2>¡Escríbenos por WhatsApp! 📲</h2>
+    <div class="container">
+        <p>Estamos listos para atenderte. Haz clic en el botón y chatea con nosotros.</p>
+        <a class="whatsapp-button" href="https://wa.me/4931231014?text=Hola,%20quiero%20más%20información" target="_blank">
+            📩 Enviar mensaje
+        </a>
+    </div>
+
+    <!-- Botón flotante para móviles -->
+    <a class="whatsapp-float" href="https://wa.me/4931231014?text=Hola,%20quiero%20más%20información" target="_blank">💬</a>
+
+</body>
+</html>

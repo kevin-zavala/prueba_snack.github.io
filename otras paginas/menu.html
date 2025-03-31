@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+  <html lang="es">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Menú del Restaurante</title>
+      <link rel="stylesheet" href="menu.css">
+      <style>
+          .menu-categories {
+              display: flex;
+              flex-wrap: wrap;
+              gap: 10px;
+              margin-bottom: 20px;
+          }
+          .category-button {
+              padding: 10px 15px;
+              border: 1px solid #ccc;
+              background-color: #f9f9f9;
+              cursor: pointer;
+              border-radius: 5px;
+          }
+          .category-button.active {
+              background-color: #ddd;
+          }
+          .menu-section {
+              display: none;
+              grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+              gap: 20px;
+          }
+          .menu-section.active {
+              display: grid;
+
+          }
+          .item {
+              border: 1px solid #eee;
+              border-radius: 8px;
+              overflow: hidden;
+              box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+          }
+          .item img {
+              width: 55%;
+              height: auto;
+              display: block;
+          }
+          .details {
+              padding: 15px;
+          }
+          .details h3 {
+              margin-top: 0;
+              margin-bottom: 5px;
+          }
+          .price {
+              color: green;
+              font-weight: bold;
+              margin-bottom: 5px;
+          }
+          .description {
+              font-size: 0.9em;
+              color: #555;
+          }
+          .navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 700px;
+          }
+      </style>
+  </head>
+  <body>
+    
+      <header>
+          <h1>Nuestro Menú</h1>
+          <div class="navbar-container">
+            <div class="navbar">
+                <a href="../index.html">INICiO</a>
+                <a href="correo.html">CONTACTO</a>
+                <a href="whatssapp.html">PEDIDOS</a>
+            
+
+            </div>
+      </header>
+      
+      <main>
+          <div class="menu-categories">
+              <button class="category-button active" data-category="category1">Categoría 1</button>
+              <button class="category-button" data-category="category2">Categoría 2</button>
+              <button class="category-button" data-category="category3">Categoría 3</button>
+              <button class="category-button" data-category="category4">Categoría 4</button>
+              <button class="category-button" data-category="category5">Categoría 5</button>
+              <button class="category-button" data-category="category6">Categoría 6</button>
+              <button class="category-button" data-category="category7">Categoría 7</button>
+              <button class="category-button" data-category="category8">Categoría 8</button>
+              <button class="category-button" data-category="category9">Categoría 9</button>
+              <button class="category-button" data-category="category10">Categoría 10</button>
+              <button class="category-button" data-category="category11">Categoría 11</button>
+              <button class="category-button" data-category="category12">Categoría 12</button>
+              <button class="category-button" data-category="category13">Categoría 13</button>
+              <button class="category-button" data-category="category14">Categoría 14</button>
+              <button class="category-button" data-category="category15">Categoría 15</button>
+          </div>
+
+          <div id="category1" class="menu-section active menu">
+              <div class="item">
+                  <img src="../images/snack1.jpeg" alt="Producto 1 de Categoría 1">
+                  <div class="details">
+                      <h3>Producto 1 de Categoría 1</h3>
+                      <p class="price">$12.99</p>
+                      <p class="description">Descripción del producto 1 de la categoría 1.</p>
+                  </div>
+              </div>
+              <div class="item">
+                  <img src="../images/snack2.jpeg" alt="Producto 2 de Categoría 1">
+                  <div class="details">
+                      <h3>Producto 2 de Categoría 1</h3>
+                      <p class="price">$9.50</p>
+                      <p class="description">Descripción del producto 2 de la categoría 1.</p>
+                  </div>
+              </div>
+              <div class="item">
+                  <img src="../images/snack3.jpeg" alt="Producto 3 de Categoría 1">
+                  <div class="details">
+                      <h3>Producto 3 de Categoría 1</h3>
+                      <p class="price">$15.75</p>
+                      <p class="description">Otra deliciosa opción de la categoría 1.</p>
+                  </div>
+              </div>
+              <div class="item">
+                  <img src="../images/snack4.jpeg" alt="Producto 4 de Categoría 1">
+                  <div class="details">
+                      <h3>Producto 4 de Categoría 1</h3>
+                      <p class="price">$11.00</p>
+                      <p class="description">Una alternativa más en nuestra primera categoría.</p>
+                  </div>
+              </div>
+              <div class="item">
+                  <img src="../images/snack5.jpeg" alt="Producto 5 de Categoría 1">
+                  <div class="details">
+                      <h3>Producto 5 de Categoría 1</h3>
+                      <p class="price">$14.20</p>
+                      <p class="description">Un clásico imperdible de la categoría 1.</p>
+                  </div>
+              </div>
+              <div class="item">
+                  <img src="../images/snack6.jpeg" alt="Producto 6 de Categoría 1">
+                  <div class="details">
+                      <h3>Producto 6 de Categoría 1</h3>
+                      <p class="price">$10.50</p>
+                      <p class="description">Una opción ligera y sabrosa de la categoría 1.</p>
+                  </div>
+              </div>
+              <div class="item">
+                  <img src="../images/snack7.jpeg" alt="Producto 7 de Categoría 1">
+                  <div class="details">
+                      <h3>Producto 7 de Categoría 1</h3>
+                      <p class="price">$13.80</p>
+                      <p class="description">Descubre este nuevo sabor de la categoría 1.</p>
+                  </div>
+              </div>
+              <div class="item">
+                  <img src="../images/snack8.jpeg" alt="Producto 8 de Categoría 1">
+                  <div class="details">
+                      <h3>Producto 8 de Categoría 1</h3>
+                      <p class="price">$11.90</p>
+                      <p class="description">La especialidad de la casa en la categoría 1.</p>
+                  </div>
+              </div>
+              </div>
+
+          <div id="category2" class="menu-section menu">
+              <div class="item">
+                  <img src="imagen2_1.jpg" alt="Producto 1 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 1 de Categoría 2</h3>
+                      <p class="price">$18.00</p>
+                      <p class="description">Descripción del producto 1 de la categoría 2.</p>
+                  </div>
+              </div>
+              <div class="item">
+                  <img src="imagen2_2.jpg" alt="Producto 2 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 2 de Categoría 2</h3>
+                      <p class="price">$11.25</p>
+                      <p class="description">Descripción del producto 2 de la categoría 2.</p>
+                  </div>
+              </div>
+              <div class="item">
+                  <img src="imagen2_3.jpg" alt="Producto 3 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 3 de Categoría 2</h3>
+                      <p class="price">$20.50</p>
+                      <p class="description">Una opción premium dentro de la categoría 2.</p>
+                  </div>
+              </div>
+              <div class="item">
+                  <img src="imagen2_4.jpg" alt="Producto 4 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 4 de Categoría 2</h3>
+                      <p class="price">$14.99</p>
+                      <p class="description">Disfruta de esta otra alternativa de la categoría 2.</p>
+                  </div>
+              </div>
+              <div class="item">
+                  <img src="imagen2_5.jpg" alt="Producto 5 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 5 de Categoría 2</h3>
+                      <p class="price">$17.50</p>
+                      <p class="description">Un favorito de nuestros clientes en la categoría 2.</p>
+                  </div>
+              </div>
+              <div class="item">
+                  <img src="imagen2_6.jpg" alt="Producto 6 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 6 de Categoría 2</h3>
+                      <p class="price">$12.80</p>
+                      <p class="description">Una opción reconfortante de la categoría 2.</p>
+                  </div>
+              </div>
+              <div class="item">
+                  <img src="imagen2_7.jpg" alt="Producto 7 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 7 de Categoría 2</h3>
+                      <p class="price">$19.20</p>
+                      <p class="description">No te pierdas esta delicia de la categoría 2.</p>
+                  </div>
+              </div>
+              <div class="item">
+                  <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 8 de Categoría 2</h3>
+                      <p class="price">$15.90</p>
+                      <p class="description">La recomendación del chef en la categoría 2.</p>
+                  </div>
+              </div>
+              </div>
+
+          <div id="category3" class="menu-section menu">
+              <div class="item">
+                  <img src="imagen3_1.jpg" alt="Producto 1 de Categoría 3">
+                  <div class="details">
+                      <h3>Producto 1 de Categoría 3</h3>
+                      <p class="price">$7.50</p>
+                      <p class="description">Descripción del producto 1 de la categoría 3.</p>
+                  </div>
+              </div>
+              <div class="item">
+                  <img src="imagen3_2.jpg" alt="Producto 2 de Categoría 3">
+                  <div class="details">
+                      <h3>Producto 2 de Categoría 3</h3>
+                      <p class="price">$14.75</p>
+                      <p class="description">Descripción del producto 2 de la categoría 3.</p>
+                  </div>
+              </div>
+              <div class="item">
+                  <img src="imagen3_3.jpg" alt="Producto 3 de Categoría 3">
+                  <div class="details">
+                      <h3>Producto 3 de Categoría 3</h3>
+                      <p class="price">$9.25</p>
+                      <p class="description">Una opción económica y deliciosa de la categoría 3.</p>
+                  </div>
+              </div>
+              <div class="item">
+                  <img src="imagen3_4.jpg" alt="Producto 4 de Categoría 3">
+                  <div class="details">
+                      <h3>Producto 4 de Categoría 3</h3>
+                      <p class="price">$16.00</p>
+                      <p class="description">Prueba esta otra interesante propuesta de la categoría 3.</p>
+                  </div>
+              </div>
+              <div class="item">
+                  <img src="imagen3_5.jpg" alt="Producto 5 de Categoría 3">
+                  <div class="details">
+                      <h3>Producto 5 de Categoría 3</h3>
+                      <p class="price">$11.50</p>
+                      <p class="description">Un básico que siempre satisface en la categoría 3.</p>
+                  </div>
+              </div>
+              <div class="item">
+                  <img src="imagen3_6.jpg" alt="Producto 6 de Categoría 3">
+                  <div class="details">
+                      <h3>Producto 6 de Categoría 3</h3>
+                      <p class="price">$13.20</p>
+                      <p class="description">Una combinación de sabores única en la categoría 3.</p>
+                  </div>
+              </div>
+              <div class="item">
+                  <img src="imagen3_7.jpg" alt="Producto 7 de Categoría 3">
+                  <div class="details">
+                      <h3>Producto 7 de Categoría 3</h3>
+                      <p class="price">$10.80</p>
+                      <p class="description">La elección perfecta para cualquier ocasión en la categoría 3.</p>
+                  </div>
+              </div>
+              <div class="item">
+                  <img src="imagen3_8.jpg" alt="Producto 8 de Categoría 3">
+                  <div class="details">
+                      <h3>Producto 8 de Categoría 3</h3>
+                      <p class="price">$15.50</p>
+                      <p class="description">Una explosión de sabor en cada bocado de la categoría 3.</p>
+                  </div>
+              </div>
+              </div>
+
+          <div id="category4" class="menu-section menu">
+              <div class="item">
+                <img src="imagen2_1.jpg" alt="Producto 1 de Categoría 4">
+                  <div class="details">
+                      <h3>Producto 1 de Categoría 4</h3>
+                      <p class="price">$22.00</p>
+                      <p class="description">Descripción del producto 1 de la categoría 4.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 2 de Categoría 4</h3>
+                      <p class="price">$17.50</p>
+                      <p class="description">Descripción del producto 2 de la categoría 4.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 3 de Categoría 4</h3>
+                      <p class="price">$25.99</p>
+                      <p class="description">Una excelente adición a nuestra categoría 4.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 4 de Categoría 4</h3>
+                      <p class="price">$19.50</p>
+                      <p class="description">Descubre esta nueva opción en la categoría 4.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 5 de Categoría 4</h3>
+                      <p class="price">$21.20</p>
+                      <p class="description">Un plato sofisticado de la categoría 4.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 6 de Categoría 4</h3>
+                      <p class="price">$18.80</p>
+                      <p class="description">Una experiencia gourmet en la categoría 4.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 7 de Categoría 4</h3>
+                      <p class="price">$23.10</p>
+                      <p class="description">El deleite de los paladares exigentes en la categoría 4.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 8 de Categoría 4</h3>
+                      <p class="price">$20.50</p>
+                      <p class="description">Una joya culinaria de la categoría 4.</p>
+                  </div>
+              </div>
+          </div>
+
+          <div id="category5" class="menu-section menu">
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 1 de Categoría 5</h3>
+                      <p class="price">$10.50</p>
+                      <p class="description">Descripción del producto 1 de la categoría 5.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 2 de Categoría 5</h3>
+                      <p class="price">$13.25</p>
+                      <p class="description">Descripción del producto 2 de la categoría 5.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 3 de Categoría 5</h3>
+                      <p class="price">$11.75</p>
+                      <p class="description">Otra gran elección de la categoría 5.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 4 de Categoría 5</h3>
+                      <p class="price">$14.50</p>
+                      <p class="description">No te pierdas este producto de la categoría 5.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 5 de Categoría 5</h3>
+                      <p class="price">$12.00</p>
+                      <p class="description">Un favorito casual de la categoría 5.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 6 de Categoría 5</h3>
+                      <p class="price">$13.90</p>
+                      <p class="description">Una opción equilibrada de la categoría 5.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 7 de Categoría 5</h3>
+                      <p class="price">$11.15</p>
+                      <p class="description">Una elección sencilla y deliciosa de la categoría 5.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 8 de Categoría 5</h3>
+                      <p class="price">$14.85</p>
+                      <p class="description">El toque especial de la categoría 5.</p>
+                  </div>
+              </div>
+          </div>
+
+          <div id="category6" class="menu-section menu">
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 1 de Categoría 6</h3>
+                      <p class="price">$28.00</p>
+                      <p class="description">Descripción del producto 1 de la categoría 6.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 2 de Categoría 6</h3>
+                      <p class="price">$32.50</p>
+                      <p class="description">Descripción del producto 2 de la categoría 6.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 3 de Categoría 6</h3>
+                      <p class="price">$30.00</p>
+                      <p class="description">Una opción destacada en la categoría 6.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 4 de Categoría 6</h3>
+                      <p class="price">$29.99</p>
+                      <p class="description">Disfruta de esta exquisitez de la categoría 6.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 5 de Categoría 6</h3>
+                      <p class="price">$31.25</p>
+                      <p class="description">Un verdadero festín de la categoría 6.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 6 de Categoría 6</h3>
+                      <p class="price">$27.50</p>
+                      <p class="description">Una experiencia culinaria inolvidable de la categoría 6.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 7 de Categoría 6</h3>
+                      <p class="price">$33.80</p>
+                      <p class="description">El plato estrella de la categoría 6.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 8 de Categoría 6</h3>
+                      <p class="price">$29.50</p>
+                      <p class="description">Un lujo para tu paladar en la categoría 6.</p>
+                  </div>
+              </div>
+          </div>
+
+          <div id="category7" class="menu-section menu">
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 1 de Categoría 7</h3>
+                      <p class="price">$6.75</p>
+                      <p class="description">Descripción del producto 1 de la categoría 7.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 2 de Categoría 7</h3>
+                      <p class="price">$8.00</p>
+                      <p class="description">Descripción del producto 2 de la categoría 7.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 3 de Categoría 7</h3>
+                      <p class="price">$7.25</p>
+                      <p class="description">Una opción ligera y sabrosa de la categoría 7.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 4 de Categoría 7</h3>
+                      <p class="price">$9.50</p>
+                      <p class="description">Prueba esta refrescante alternativa de la categoría 7.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 5 de Categoría 7</h3>
+                      <p class="price">$7.80</p>
+                      <p class="description">Un acompañamiento perfecto de la categoría 7.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 6 de Categoría 7</h3>
+                      <p class="price">$8.90</p>
+                      <p class="description">Una opción rápida y deliciosa de la categoría 7.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 7 de Categoría 7</h3>
+                      <p class="price">$7.00</p>
+                      <p class="description">Un pequeño placer de la categoría 7.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 8 de Categoría 7</h3>
+                      <p class="price">$9.25</p>
+                      <p class="description">El toque final perfecto de la categoría 7.</p>
+                  </div>
+              </div>
+          </div>
+
+          <div id="category8" class="menu-section menu">
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 1 de Categoría 8</h3>
+                      <p class="price">$15.50</p>
+                      <p class="description">Descripción del producto 1 de la categoría 8.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 2 de Categoría 8</h3>
+                      <p class="price">$12.00</p>
+                      <p class="description">Descripción del producto 2 de la categoría 8.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 3 de Categoría 8</h3>
+                      <p class="price">$14.00</p>
+                      <p class="description">Una elección popular en la categoría 8.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 4 de Categoría 8</h3>
+                      <p class="price">$16.75</p>
+                      <p class="description">Descubre el sabor de este producto de la categoría 8.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 5 de Categoría 8</h3>
+                      <p class="price">$13.50</p>
+                      <p class="description">Un clásico reconfortante de la categoría 8.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 6 de Categoría 8</h3>
+                      <p class="price">$15.20</p>
+                      <p class="description">Una opción versátil de la categoría 8.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 7 de Categoría 8</h3>
+                      <p class="price">$12.85</p>
+                      <p class="description">Un sabor que te encantará de la categoría 8.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 8 de Categoría 8</h3>
+                      <p class="price">$17.00</p>
+                      <p class="description">La combinación perfecta de ingredientes de la categoría 8.</p>
+                  </div>
+              </div>
+          </div>
+
+          <div id="category9" class="menu-section menu">
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 1 de Categoría 9</h3>
+                      <p class="price">$19.00</p>
+                      <p class="description">Descripción del producto 1 de la categoría 9.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 2 de Categoría 9</h3>
+                      <p class="price">$21.50</p>
+                      <p class="description">Descripción del producto 2 de la categoría 9.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 3 de Categoría 9</h3>
+                      <p class="price">$20.25</p>
+                      <p class="description">Una opción sofisticada de la categoría 9.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 4 de Categoría 9</h3>
+                      <p class="price">$18.50</p>
+                      <p class="description">Deléitate con este producto de la categoría 9.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 5 de Categoría 9</h3>
+                      <p class="price">$22.80</p>
+                      <p class="description">Una experiencia culinaria de alto nivel en la categoría 9.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 6 de Categoría 9</h3>
+                      <p class="price">$19.75</p>
+                      <p class="description">Un sabor intenso de la categoría 9.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 7 de Categoría 9</h3>
+                      <p class="price">$21.00</p>
+                      <p class="description">La elección de los conocedores en la categoría 9.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 8 de Categoría 9</h3>
+                      <p class="price">$20.50</p>
+                      <p class="description">Un placer para los sentidos de la categoría 9.</p>
+                  </div>
+              </div>
+          </div>
+
+          <div id="category10" class="menu-section menu">
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 1 de Categoría 10</h3>
+                      <p class="price">$13.75</p>
+                      <p class="description">Descripción del producto 1 de la categoría 10.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 2 de Categoría 10</h3>
+                      <p class="price">$10.00</p>
+                      <p class="description">Descripción del producto 2 de la categoría 10.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 3 de Categoría 10</h3>
+                      <p class="price">$12.50</p>
+                      <p class="description">Una opción clásica de la categoría 10.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 4 de Categoría 10</h3>
+                      <p class="price">$14.25</p>
+                      <p class="description">Disfruta de este favorito de la categoría 10.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 5 de Categoría 10</h3>
+                      <p class="price">$11.90</p>
+                      <p class="description">Un básico delicioso de la categoría 10.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 6 de Categoría 10</h3>
+                      <p class="price">$13.10</p>
+                      <p class="description">Una elección acertada de la categoría 10.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 7 de Categoría 10</h3>
+                      <p class="price">$10.75</p>
+                      <p class="description">Un sabor tradicional de la categoría 10.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 8 de Categoría 10</h3>
+                      <p class="price">$14.99</p>
+                      <p class="description">La opción ideal para cualquier momento de la categoría 10.</p>
+                  </div>
+              </div>
+          </div>
+
+          <div id="category11" class="menu-section menu">
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 1 de Categoría 11</h3>
+                      <p class="price">$25.00</p>
+                      <p class="description">Descripción del producto 1 de la categoría 11.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 2 de Categoría 11</h3>
+                      <p class="price">$22.75</p>
+                      <p class="description">Descripción del producto 2 de la categoría 11.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 3 de Categoría 11</h3>
+                      <p class="price">$24.00</p>
+                      <p class="description">Una elección especial de la categoría 11.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 4 de Categoría 11</h3>
+                      <p class="price">$26.50</p>
+                      <p class="description">Prueba esta deliciosa oferta de la categoría 11.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 5 de Categoría 11</h3>
+                      <p class="price">$23.50</p>
+                      <p class="description">Un plato exquisito de la categoría 11.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 6 de Categoría 11</h3>
+                      <p class="price">$25.80</p>
+                      <p class="description">Una experiencia gastronómica única de la categoría 11.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 7 de Categoría 11</h3>
+                      <p class="price">$24.50</p>
+                      <p class="description">El sabor que te sorprenderá de la categoría 11.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 8 de Categoría 11</h3>
+                      <p class="price">$27.00</p>
+                      <p class="description">Un verdadero placer culinario de la categoría 11.</p>
+                  </div>
+              </div>
+          </div>
+
+          <div id="category12" class="menu-section menu">
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 1 de Categoría 12</h3>
+                      <p class="price">$9.00</p>
+                      <p class="description">Descripción del producto 1 de la categoría 12.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 2 de Categoría 12</h3>
+                      <p class="price">$11.50</p>
+                      <p class="description">Descripción del producto 2 de la categoría 12.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 3 de Categoría 12</h3>
+                      <p class="price">$10.25</p>
+                      <p class="description">Una opción refrescante de la categoría
+                        12.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 4 de Categoría 12</h3>
+                      <p class="price">$12.75</p>
+                      <p class="description">Disfruta de esta ligera opción de la categoría 12.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 5 de Categoría 12</h3>
+                      <p class="price">$10.80</p>
+                      <p class="description">Una alternativa saludable de la categoría 12.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 6 de Categoría 12</h3>
+                      <p class="price">$11.90</p>
+                      <p class="description">Una opción revitalizante de la categoría 12.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 7 de Categoría 12</h3>
+                      <p class="price">$9.75</p>
+                      <p class="description">Un capricho ligero de la categoría 12.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 8 de Categoría 12</h3>
+                      <p class="price">$12.20</p>
+                      <p class="description">El toque de frescura de la categoría 12.</p>
+                  </div>
+              </div>
+          </div>
+
+          <div id="category13" class="menu-section menu">
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 1 de Categoría 13</h3>
+                      <p class="price">$17.25</p>
+                      <p class="description">Descripción del producto 1 de la categoría 13.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 2 de Categoría 13</h3>
+                      <p class="price">$15.00</p>
+                      <p class="description">Descripción del producto 2 de la categoría 13.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 3 de Categoría 13</h3>
+                      <p class="price">$16.50</p>
+                      <p class="description">Una elección sabrosa de la categoría 13.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 4 de Categoría 13</h3>
+                      <p class="price">$18.75</p>
+                      <p class="description">Prueba este delicioso platillo de la categoría 13.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 5 de Categoría 13</h3>
+                      <p class="price">$15.80</p>
+                      <p class="description">Un clásico irresistible de la categoría 13.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 6 de Categoría 13</h3>
+                      <p class="price">$17.90</p>
+                      <p class="description">Una combinación de sabores exquisita de la categoría 13.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 7 de Categoría 13</h3>
+                      <p class="price">$16.20</p>
+                      <p class="description">La opción perfecta para compartir de la categoría 13.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 8 de Categoría 13</h3>
+                      <p class="price">$19.10</p>
+                      <p class="description">Un festín de sabor de la categoría 13.</p>
+                  </div>
+              </div>
+          </div>
+
+          <div id="category14" class="menu-section menu">
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 1 de Categoría 14</h3>
+                      <p class="price">$21.00</p>
+                      <p class="description">Descripción del producto 1 de la categoría 14.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 2 de Categoría 14</h3>
+                      <p class="price">$23.50</p>
+                      <p class="description">Descripción del producto 2 de la categoría 14.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 3 de Categoría 14</h3>
+                      <p class="price">$22.25</p>
+                      <p class="description">Una opción elegante de la categoría 14.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 4 de Categoría 14</h3>
+                      <p class="price">$24.75</p>
+                      <p class="description">Disfruta de esta experiencia culinaria de la categoría 14.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 5 de Categoría 14</h3>
+                      <p class="price">$21.80</p>
+                      <p class="description">Un plato de alta cocina de la categoría 14.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 6 de Categoría 14</h3>
+                      <p class="price">$23.00</p>
+                      <p class="description">Una creación especial de la categoría 14.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 7 de Categoría 14</h3>
+                      <p class="price">$22.50</p>
+                      <p class="description">El sabor de la excelencia de la categoría 14.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 8 de Categoría 14</h3>
+                      <p class="price">$25.10</p>
+                      <p class="description">Una delicia para los sentidos de la categoría 14.</p>
+                  </div>
+              </div>
+          </div>
+
+          <div id="category15" class="menu-section menu">
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 1 de Categoría 15</h3>
+                      <p class="price">$16.50</p>
+                      <p class="description">Descripción del producto 1 de la categoría 15.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 2 de Categoría 15</h3>
+                      <p class="price">$19.00</p>
+                      <p class="description">Descripción del producto 2 de la categoría 15.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 3 de Categoría 15</h3>
+                      <p class="price">$17.75</p>
+                      <p class="description">Una opción tentadora de la categoría 15.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 4 de Categoría 15</h3>
+                      <p class="price">$20.25</p>
+                      <p class="description">Descubre este delicioso producto de la categoría 15.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 5 de Categoría 15</h3>
+                      <p class="price">$18.10</p>
+                      <p class="description">Un sabor único de la categoría 15.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 6 de Categoría 15</h3>
+                      <p class="price">$19.50</p>
+                      <p class="description">Una propuesta innovadora de la categoría 15.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 7 de Categoría 15</h3>
+                      <p class="price">$17.00</p>
+                      <p class="description">Un gusto exquisito de la categoría 15.</p>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="imagen2_8.jpg" alt="Producto 8 de Categoría 2">
+                  <div class="details">
+                      <h3>Producto 8 de Categoría 15</h3>
+                      <p class="price">$20.99</p>
+                      <p class="description">El broche de oro de la categoría 15.</p>
+                  </div>
+              </div>
+          </div>
+      </main>
+
+      <footer>
+          <p>&copy; 2025 Menú del Restaurante</p>
+      </footer>
+
+      <script>
+          document.addEventListener('DOMContentLoaded', function() {
+              const categoryButtons = document.querySelectorAll('.category-button');
+              const menuSections = document.querySelectorAll('.menu-section');
+
+              categoryButtons.forEach(button => {
+                  button.addEventListener('click', function() {
+                      const category = this.dataset.category;
+
+                      // Desactivar todos los botones y secciones
+                      categoryButtons.forEach(btn => btn.classList.remove('active'));
+                      menuSections.forEach(section => section.classList.remove('active'));
+
+                      // Activar el botón y la sección correspondiente
+                      this.classList.add('active');
+                      const targetSection = document.getElementById(category);
+                      if (targetSection) {
+                          targetSection.classList.add('active');
+                      }
+                  });
+              });
+          });
+      </script>
+  </body>
+  </html>
