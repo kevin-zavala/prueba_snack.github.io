@@ -343,8 +343,8 @@ a img:hover {
     }
 
     .testimonial-1 {
-        width: 60%;
-        margin-bottom: 30px;
+        width: 20%;
+        margin-bottom: 10px;
     }
 
     .information {
@@ -391,6 +391,6 @@ a img:hover {
     }
 
     .testimonial-1 {
-        width: 100%;
+        width: 50%;
     }
 }
