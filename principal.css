@@ -294,7 +294,7 @@ a img:hover {
 
 /* ------ RESPONSIVE ------ */
 
-@media (max-width: 1280px) {
+@media (max-width: 100px) {
     .menu label {
         display: initial;
     }
