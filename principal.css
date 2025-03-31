@@ -295,14 +295,14 @@ a img:hover {
 
 /* ------ RESPONSIVE ------ */
 
-@media (max-width: 0px) {
+@media (max-width: 800px) {
     .menu label {
         display: initial;
     }
 
     .menu .navbar {
         position: absolute;
-        top: 100%;
+        top: 70%;
         left: 0;
         right: 0;
         background-color: #24272e;
@@ -311,7 +311,7 @@ a img:hover {
     }
 
     .menu .navbar ul li {
-        width: 100%;
+        width: 70%;
     }
 
     #menu:checked ~ .navbar {
@@ -332,7 +332,7 @@ a img:hover {
     }
 
     .about-txt, .about-img {
-        flex-basis: 100%;
+        flex-basis: 70%;
         padding: 0;
     }
 
@@ -342,8 +342,8 @@ a img:hover {
     }
 
     .testimonial-1 {
-        width: 90%;
-        margin-bottom: 50px;
+        width: 60%;
+        margin-bottom: 30px;
     }
 
     .information {
@@ -362,7 +362,7 @@ a img:hover {
     }
 }
 
-@media (max-width: 0px) {
+@media (max-width: 480px) {
     .header {
         padding: 100px 0;
     }
