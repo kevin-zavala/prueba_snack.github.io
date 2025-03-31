@@ -295,70 +295,13 @@ a img:hover {
 
 /* ------ RESPONSIVE ------ */
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
     .menu label {
         display: initial;
     }
 
-    .menu .navbar {
-        position: absolute;
-        top: 70%;
-        left: 0;
-        right: 0;
-        background-color: #24272e;
-        display: none;
-        flex-direction: column;
-    }
-
-    .menu .navbar ul li {
-        width: 70%;
-    }
-
-    #menu:checked ~ .navbar {
-        display: flex;
-    }
-
-    .header-txt h1 {
-        font-size: 50px;
-        line-height: 60px;
-    }
-
-    .header-txt p {
-        padding: 0 50px;
-    }
-
-    .about-content {
-        flex-direction: column;
-    }
-
-    .about-txt, .about-img {
-        flex-basis: 70%;
-        padding: 0;
-    }
-
-    .testimonial-content {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .testimonial-1 {
-        width: 60%;
-        margin-bottom: 30px;
-    }
-
-    .information {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer-content {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .testimonial {
-        text-align: center;
-        margin-bottom: 20px;
+    .header {
+        width: 95%;
     }
 }
 
